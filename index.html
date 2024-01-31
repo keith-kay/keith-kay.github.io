@@ -30,9 +30,15 @@
         .service {
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
         }
+
+        body {
+            width: 100%;
+            overflow-x: hidden;
+            /* This will hide the horizontal scrollbar if the content is wider than the screen */
+        }
     </style>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <nav class="navbar service navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#" style="background-color: white; height: auto;">
                 <img src="assets/images/logo.jpg">
@@ -213,7 +219,7 @@
     <!-- ABOUT -->
 
     <section id="about" class="about">
-        <div class="container">
+        <div class="container" id="about" class="about">
             <div class="row align-items-center gy-5">
                 <div class="col-lg-5">
                     <img src="./assets/images/sacco_abt.jpg" style="height: 100%; width:100%; border-radius: 4px;">
@@ -509,7 +515,7 @@
     <!-- /services -->
 
     <!-- contact -->
-    <section id="contact" class="contact" style="background-color: #DDDDDD;">
+    <section id="contact" class="contact" style="background-color: #f5f5f5;">
         <div class="container my-5" style="background-color: #fffffffd;  border-radius: 10px; color: #000000e5;">
             <div class="row">
                 <style>
@@ -576,7 +582,7 @@
                     <div class="single_address">
                         <i class="las la-envelope my-2"></i>
                         <h4>Send your message</h4>
-                        <p>grainbulksacco@gmail.com</p>
+                        <p>info@grainbulksacco.co.ke</p>
                     </div>
                     <div class="single_address">
                         <i class="las la-phone my-2"></i>
@@ -632,142 +638,185 @@
     <!-- /contact -->
 
     <!-- FAQs -->
+    <style>
+
+    </style>
     <section id="faqs" style="background-color: #fff;">
+        <style>
+            .vertical-line {
+                border-right: 8px solid #ecff00;
+                height: 100%;
+                margin-right: 10px;
+                border-radius: 3px;
+                /* Change the color as needed */
+            }
+        </style>
         <div class="container service justify-content-center my-5"
-            style="background-color: #fffffffd; border-radius: 10px;">
-            <div class="section-title" style="border-radius: 10px;">
-                <p class="btn fw-bold mt-4"
-                    style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px;">FAQs</p>
-            </div>
-            <div class="accordion accordion-flush rounded-3" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            1. How to pay M-LOAN via paybill?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            <ol>
-                                <li>Select Paybill from Mpesa Menu</li>
-                                <li>Enter Business No. 4023329</li>
-                                <li>Enter Account No. 63649</li>
-                                <li>Enter Amount</li>
-                                <li>Enter 4-digit Pin and confirm details</li>
-                            </ol>
+            style="background-color: #fffffffd; border-radius: 10px; display: flex;">
+            <div class="row">
+                <div class="section-title" style="border-radius: 10px;">
+                    <p class="btn fw-bold mt-4"
+                        style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px;">FAQs</p>
+                </div>
+                <div class="col-lg-4 mb-4 py-5 mt-5 d-none d-lg-block">
+                    <div class="mx-auto" style="width: 500px; height: 350px;">
+                        <div class="mx-4" style="width: 500px; height: 350px;">
+                            <h2 class="mb-4 mx-4">Have questions?</h2>
+                            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                type="module"></script>
+                            <dotlottie-player
+                                src="https://lottie.host/9492b751-e850-4165-bfde-2e7e16aae904/SJrtxgSQ5S.json"
+                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                autoplay></dotlottie-player>
+
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            2. What happens in the case of death?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            <p>The family should provide a death certificate and they shall be paid 20,000/=</p>
-                        </div>
-                    </div>
+                <div class="col-lg-1 mb-4 py-5 d-none d-lg-block">
+                    <div class="vertical-line"></div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            3. Is transferring my membership to another member mandatory upon termination?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            Yes, according to the Grainbulk Non-WDT Sacco laws, upon termination, your membership can
-                            only be transferred to another existing member.
-                            <br> This ensures the continuity of membership within the Sacco.
+                <div class="col-lg-7 mb-4 py-5 mt-5">
+                    <div class="accordion accordion-flush rounded-3" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    1. How to pay M-LOAN via paybill?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    <ol>
+                                        <li>Select Paybill from Mpesa Menu</li>
+                                        <li>Enter Business No. 4023329</li>
+                                        <li>Enter Account No. 63649</li>
+                                        <li>Enter Amount</li>
+                                        <li>Enter 4-digit Pin and confirm details</li>
+                                    </ol>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            4. How can I access SACCO M-Loan?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            This is a mobile banking service that rides on the M-Pesa platform. <br>
-                            To access Sacco M-LOAN services, Dial *377*488#
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    2. What happens in the case of death?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    <p>The family should provide a death certificate and they shall be paid 20,000/=</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            5. What is the minimum amount required for these monthly non-withdrawable savings?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            The minimum amount required for these savings is 2000/=, as determined by the Sacco.
-                            <br>Members are encouraged to contribute at least this minimum amount to participate in the
-                            savings program.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    3. Is transferring my membership to another member mandatory upon termination?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    Yes, according to the Grainbulk Non-WDT Sacco laws, upon termination, your
+                                    membership
+                                    can
+                                    only be transferred to another existing member.
+                                    <br> This ensures the continuity of membership within the Sacco.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSix">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            6. Is there a registration fee to become a member?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            Yes, there is a non-refundable registration fee of 1000/= that is required when applying for
-                            membership.
-                            <br>This fee helps cover administrative and processing costs associated with your membership
-                            registration.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    4. How can I access SACCO M-Loan?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    This is a mobile banking service that rides on the M-Pesa platform. <br>
+                                    To access Sacco M-LOAN services, Dial *377*488#
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingSeven">
-                        <button class="accordion-button collapsed fw-bold" type="button"
-                            style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            7. Where can I obtain the Sacco membership form?
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
-                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
-                            You can obtain the Sacco membership form from the Sacco's office or through their official
-                            website.
-                            <br>The form is usually available for download(<u><a
-                                    href="./assets/pdf/17A. Sacco Joining Form.pdf"
-                                    style="color: blue; font-weight: bold;" download>Sacco Joining Form</a></u>) or can
-                            be collected in person.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    5. What is the minimum amount required for these monthly non-withdrawable savings?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    The minimum amount required for these savings is 2000/=, as determined by the Sacco.
+                                    <br>Members are encouraged to contribute at least this minimum amount to participate
+                                    in
+                                    the
+                                    savings program.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    6. Is there a registration fee to become a member?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    Yes, there is a non-refundable registration fee of 1000/= that is required when
+                                    applying
+                                    for
+                                    membership.
+                                    <br>This fee helps cover administrative and processing costs associated with your
+                                    membership
+                                    registration.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    style="color:rgba(22, 22, 22, 0.849); font-size: 20px;padding:0, 0, 10, 10; "
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                    aria-expanded="false" aria-controls="flush-collapseFour">
+                                    7. Where can I obtain the Sacco membership form?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body" style="color:rgba(22, 22, 22, 0.849); font-size: 20px;">
+                                    You can obtain the Sacco membership form from the Sacco's office or through their
+                                    official
+                                    website.
+                                    <br>The form is usually available for download(<u><a
+                                            href="./assets/pdf/17A. Sacco Joining Form.pdf"
+                                            style="color: blue; font-weight: bold;" download>Sacco Joining Form</a></u>)
+                                    or
+                                    can
+                                    be collected in person.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -814,37 +863,162 @@
             background: #ecff00;
             transform: rotate(45deg);
         }
+
+        .pushpin {
+            margin: 0 auto -15px auto;
+            position: relative;
+            width: 20px;
+            height: 35px;
+            z-index: 1;
+        }
+
+        .pushpin.tilted {
+            -ms-transform: rotate(9deg);
+            -moz-transform: rotate(9deg);
+            -webkit-transform: rotate(9deg);
+            -o-transform: rotate(9deg);
+            transform: rotate(9deg);
+        }
+
+        .pinhead {
+            background: darkred;
+            width: 75%;
+            height: 20%;
+            border-radius: 100%;
+            position: relative;
+            left: 12.5%;
+            top: 0;
+        }
+
+        .pinhead:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: -30%;
+            left: 0;
+        }
+
+        .pinbase {
+            background: darkred;
+            width: 100%;
+            height: 25%;
+            border-radius: 100%;
+            position: relative;
+            left: 0;
+            top: 30%;
+        }
+
+        .pinbase:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: -30%;
+            left: 0;
+        }
+
+        .pinshaft {
+            background: darkred;
+            height: 30%;
+            width: 50%;
+            position: relative;
+            border-radius: 0;
+            top: -30%;
+            left: 25%;
+        }
+
+        .pinshaft:after {
+            content: '';
+            width: 100%;
+            height: 50%;
+            border-radius: 50%;
+            background: darkred;
+            position: absolute;
+            top: 75%;
+        }
+
+        .pinpoint {
+            display: block;
+            background: #999;
+            height: 70%;
+            width: 14%;
+            position: absolute;
+            border-radius: 0 0 20% 20%;
+            z-index: -50;
+            bottom: 0;
+            left: 43%;
+        }
+
+        /* NOTE */
+        .stickynote {
+            width: 250px;
+            margin: 60px auto;
+        }
+
+        .stickynote.tilted {
+            transform: rotate(-3deg);
+        }
+
+        .note {
+            font-family: 'Reenie Beanie', cursive;
+            color: #333;
+            position: relative;
+            width: 350px;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px 20px 10px 20px;
+            font-size: 26px;
+            box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+            background-color: transparent;
+            border: none;
+        }
+
+        .yellow {
+            background: rgba(253, 249, 135, 0.507);
+        }
     </style>
-    <section class="py-5" id="membership" style="background-color: #DDDDDD; padding-top: 100px; padding-bottom: 100px;">
-        <div class="container my-5" style="background-color: #fffffffd; border-radius: 10px; color: #000;">
+    <section class="py-5" id="membership" style="background-color: #f5f5f5; padding-top: 100px; padding-bottom: 100px;">
+        <div class="container my-5 mb-3" style="background-color: #fffffffd; border-radius: 10px; color: #000;">
+            <div class="text-center">
+                <h1 class="mb-3 btn fw-bold mt-4 "
+                    style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px;">
+                    Membership</h1>
+            </div>
             <div class="row">
-                <div class="col-lg-5 py-5 d-none d-lg-block " style="margin-left: 8 px;">
-                    <div class="card"
-                        style="background-color: #fffffffd; border-radius: 10px; color: #0d1c34; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
-                        <div class="card-body" style="padding: 30px;">
-                            <h3 class="card-title fw-bold mb-4" style="color: #0d1c34;">Why Choose Us?</h3>
-                            <ul class="burst" style="font-size: 18px;">
-                                <li class="mb-2">High Dividend rates on share capital</li>
-                                <li class="mb-2">High rebates</li>
-                                <li class="mb-2">Low interest rate on loans as low as 1% pm on reducing balance</li>
-                                <li class="mb-2">Affordable credit</li>
-                                <li class="mb-2">Guaranteed security of your savings and deposits</li>
-                                <li class="mb-2">Faster loan processing</li>
-                                <li class="mb-2">Access to quick and convenient E-loan (Mobile loan)</li>
-                                <li class="mb-2">Effective customer service</li>
-                            </ul>
-                        </div>
+                <div id="stickynote" class="stickynote tilted col-lg-5 py-6">
+
+                    <div class="pushpin tilted">
+                        <div class="pinhead"></div>
+                        <div class="pinbase"></div>
+                        <div class="pinshaft"></div>
+                        <div class="pinpoint"></div>
+                    </div>
+
+                    <div class="note yellow">
+                        <h3 class="card-title fw-bold mb-4" style="color: #0d1c34;">Why Choose Us?</h3>
+                        <ul class="burst" style="font-size: 18px;">
+                            <li class="mb-2">High Dividend rates on share capital</li>
+                            <li class="mb-2">High rebates</li>
+                            <li class="mb-2">Low interest rate on loans as low as 1% pm on reducing balance</li>
+                            <li class="mb-2">Affordable credit</li>
+                            <li class="mb-2">Guaranteed security of your savings and deposits</li>
+                            <li class="mb-2">Faster loan processing</li>
+                            <li class="mb-2">Access to quick and convenient E-loan (Mobile loan)</li>
+                            <li class="mb-2">Effective customer service</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-7 py-6" style="padding: 50px;">
-                    <h1 class="mb-3 btn fw-bold"
-                        style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px; margin-left: 20px;">
-                        Membership</h1>
-                    <br>
+
                     <h5 class="mb-3 btn fw-bold" style=" color:#000000e5; cursor: none; margin-left: 20px;">How To
                         Become a Member</h5>
                     <div class="row g-3">
-                        <ol class="fw-bold" style="font-size: 20px; margin-left: 18px;">
+                        <ol class="fw-bold" style="font-size: 18px; margin-left: 18px;">
                             <li class="mb-3 mt-3">A copy of national ID</li>
                             <li class="mb-3">A clear passport size photo</li>
                             <li class="mb-3">Non-refundable registration fee of 1000/=</li>
@@ -877,7 +1051,7 @@
                     </div>
                     <div class="icon-container mb-2">
                         <i class="las la-envelope" style=" color: #ecff00; font-size: 25px;"></i>
-                        <span style="margin-left: 8px;">grainbulksacco@gmail.com</span>
+                        <span style="margin-left: 8px;">info@grainbulksacco.co.ke</span>
                     </div>
                 </div>
                 <div class="col-lg-2 ms-auto">
@@ -955,7 +1129,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="copyright-container fw-bold">
-                        <p class="text-center copyright">&copy; Copyright 2023, Grain Bulk Non WDT Sacco.</p>
+                        <p class="text-center copyright">&copy; Copyright 2024, Grain Bulk Non WDT Sacco.</p>
                     </div>
                 </div>
             </div>
